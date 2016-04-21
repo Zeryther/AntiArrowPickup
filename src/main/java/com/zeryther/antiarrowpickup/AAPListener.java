@@ -14,9 +14,7 @@ public class AAPListener implements Listener {
 	
 	@EventHandler
 	public void onProjectileHit(ProjectileHitEvent e){
-		if(e.getEntity() instanceof Arrow){
-			e.getEntity().remove();
-		}
+		e.getEntity().remove();
 	}
 
 }
