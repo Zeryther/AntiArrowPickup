@@ -6,7 +6,7 @@ public class AAPPlugin extends JavaPlugin {
 
 	private static AAPPlugin instance;
 	
-	public AAPPlugin() {
+	public void onEnable() {
 		instance = this;
 		
 		registerListeners();
