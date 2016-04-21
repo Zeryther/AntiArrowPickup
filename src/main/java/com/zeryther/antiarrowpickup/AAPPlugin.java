@@ -4,8 +4,20 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class AAPPlugin extends JavaPlugin {
 
+	private static AAPPlugin instance;
+	
 	public AAPPlugin() {
-		// TODO Auto-generated constructor stub
+		instance = this;
+		
+		registerListeners();
+	}
+	
+	public static AAPPlugin getInstance(){
+		return instance;
+	}
+	
+	private void registerListeners(){
+		new AAPListener();
 	}
 
 }
